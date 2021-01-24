@@ -1,0 +1,8 @@
+{
+  "short_name": "Comics Test",
+  "name": "The Comics Test w/ Marvel API",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#282c34",
+  "background_color": "#282c34"
+}

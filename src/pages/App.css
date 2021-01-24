@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  font-size: calc(10px + 2vmin);
+}
+
+.error {
+  color: red;
+}
+
+.description {
+  margin: 0 30px 30px 30px;
+}
+
+.subtitle {
+  font-size: calc(10px + 1.5vmin);
+}
+
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.characters >div {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  max-width: 300px;
+  flex: 1 1 auto;
+}
+
+.characters >div img {
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: contain;
+  width: 300px;
+  height: 100%;
+}
+
+.attributionText {
+  font-family: none;
+  font-size: 15px;
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+
+.loading-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.loading-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: loading-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+.loading-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.loading-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.loading-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes loading-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
